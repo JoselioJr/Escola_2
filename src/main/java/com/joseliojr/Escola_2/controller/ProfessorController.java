@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.joseliojr.Escola_2.dto.ProfessorDto;
 import com.joseliojr.Escola_2.dto.DtoConverter;
+import com.joseliojr.Escola_2.dto.ProfessorDto;
 import com.joseliojr.Escola_2.service.ProfessorService;
 
 @RestController
