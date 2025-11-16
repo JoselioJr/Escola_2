@@ -12,6 +12,7 @@ Sistema de gerenciamento escolar com banco de dados implementando os seguintes r
 6. **N Departamentos para 1 Universidade** - Departamentos pertencem a uma universidade
 7. **N Alunos para 1 Departamento** - Alunos estão matriculados em um departamento
 8. **1 Carteira para 1 Aluno** - Relacionamento one-to-one bidirecional
+9. **1 Professor para N Departamentos (como chefe)** - Um professor pode ser chefe de departamento
 
 ## Tecnologias Utilizadas
 
@@ -19,7 +20,7 @@ Sistema de gerenciamento escolar com banco de dados implementando os seguintes r
 - Spring Data JPA
 - H2 Database (desenvolvimento)
 - Maven
-- Java 17+
+- Java
 
 ## Estrutura do Projeto
 
@@ -80,13 +81,10 @@ Sistema de gerenciamento escolar com banco de dados implementando os seguintes r
 ## Como Executar
 
 1. Clone o repositório
-2. Execute: `mvn spring-boot:run`
-3. Acesse: `http://localhost:8080`
-4. Console H2: `http://localhost:8080/h2-console`
+2. Certifique-se de ter Java 17+ e Maven instalados
+3. Execute: `mvn spring-boot:run`
+4. Acesse: `http://localhost:8080`
+5. Console H2: `http://localhost:8080/h2-console`
    - JDBC URL: `jdbc:h2:mem:testdb`
    - Username: `sa`
    - Password: (vazio)
-
-## Dados de Exemplo
-
-O sistema já vem com dados de exemplo que demonstram todos os relacionamentos implementados.
