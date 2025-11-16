@@ -90,7 +90,7 @@ public class DtoConverter {
             departamento.getNome(),
             departamento.getSigla(),
             departamento.getCentro(),
-            departamento.getChefeDepartamento(),
+            departamento.getChefeDepartamento() != null ? departamento.getChefeDepartamento().getId() : null,
             departamento.getEmailContato(),
             departamento.getTelefone(),
             departamento.getLocalizacao()
@@ -103,7 +103,6 @@ public class DtoConverter {
         departamento.setNome(dto.getNome());
         departamento.setSigla(dto.getSigla());
         departamento.setCentro(dto.getCentro());
-        departamento.setChefeDepartamento(dto.getChefeDepartamento());
         departamento.setEmailContato(dto.getEmailContato());
         departamento.setTelefone(dto.getTelefone());
         departamento.setLocalizacao(dto.getLocalizacao());

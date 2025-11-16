@@ -42,7 +42,7 @@ public class UniversidadeController {
         return ResponseEntity.notFound().build();
     }
     
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}") 
     public ResponseEntity<Void> deleteUniversidade(@PathVariable UUID id) {
         if (universidadeService.findById(id) != null) {
             universidadeService.deleteById(id);

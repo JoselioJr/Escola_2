@@ -6,7 +6,7 @@ import java.util.UUID;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Departamentos")
+@Table(name = "departamento")
 public class Departamento {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -45,7 +45,7 @@ public class Departamento {
     
     @ManyToOne
     @JoinColumn(name = "chefe_departamento_id")
-    private UUID chefeDepartamento;
+    private Professor chefeDepartamento;
 
     public Departamento() {
     }
@@ -147,11 +147,11 @@ public class Departamento {
         this.localizacao = localizacao;
     }
 
-    public UUID getChefeDepartamento() {
+    public Professor getChefeDepartamento() {
         return chefeDepartamento;
     }
 
-    public void setChefeDepartamento(UUID chefeDepartamento) {
+    public void setChefeDepartamento(Professor chefeDepartamento) {
         this.chefeDepartamento = chefeDepartamento;
     }
 }
